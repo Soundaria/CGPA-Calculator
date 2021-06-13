@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semester</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body onload="call()">
+    <style>
+         h6{
+            border-left: 25px solid green;
+            background-color: darkgrey;
+            height:50px;
+            padding-top:8px;
+            font-family: 'Times New Roman', Times, serif;
+            text-indent: 1px;
+            font-size: 25px;
+         }
+        .container-sm{
+            animation : display 9s;
+            color:dimgrey;
+            animation-fill-mode: forwards;
+            position: relative;
+        }
+        @keyframes display{
+            0%{opacity:0;}
+           25%{opacity:0;}
+           50%{opacity:0;}
+           100%{opacity: 1;}
+        }
+     
+    
+    </style>
+
+
+    <div class="container-fluid" id="nav bar"  >
+        <div class="row">
+            <h6>Cummulative Grade Point Average %</h6>
+        </div>
+    </div>
+    <center>
+    <div class="container"style="margin-top:2rem;margin-left:30px;" id="semesters">
+       <div class="row" >
+            <div class="col-sm-6">
+                <div class="w3-container w3-center w3-animate-left">
+                    <div class="row" id="col1"></div><br>
+                    <div class="row" id="col2"></div><br>
+                    <div class="row" id="col3"></div><br>
+                    <div class="row" id="col4"></div><br>
+                    <div class="row" id="col5"></div><br>
+                    <div class="row" id="col6"></div><br>
+                    <div class="row" id="col7"></div><br>
+                    <div class="row" id="col8"></div><br>
+                </div>
+             </div>
+            <div class="col-sm-6 " style="font-family: monospace;text-align: left;font-size: 1.5rem;">
+                <span class="badge bg-secondary">Report</span><br>
+                <div class="result" id="result"></div>
+                <div class="sgpa" id="sgpa"></div>
+                <div class="cgpa" id="cgpa" style="font-size: 3rem;">
+               
+            </div>    
+        </div>
+    
+    </center>
+
+ 
+    
+    
+    
+    
+
+   
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
