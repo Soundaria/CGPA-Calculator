@@ -57,7 +57,7 @@ function button(i){
     id="id"+i;
     colid="col"+i;
     var button=document.createElement("button");
-    button.setAttribute("class","btn p-3 col-10 ");
+    button.setAttribute("class","btn p-3 col-10");
     button.setAttribute("id",id);
     button.setAttribute("onclick",offcanvas(i));
     button.setAttribute("data-bs-toggle","offcanvas");
