@@ -62,6 +62,8 @@ function button(i){
     button.setAttribute("onclick",offcanvas(i));
     button.setAttribute("data-bs-toggle","offcanvas");
     button.setAttribute("data-bs-target","#semester"+i);
+    button.setAttribute("onmouseover","hoverin("+i+")");
+    button.setAttribute("onmouseout","hoverout("+i+")");
     button.style.fontFamily="times new roman";
     button.style.backgroundColor="skyblue";
     button.style.fontSize="1.5rem";
@@ -74,6 +76,12 @@ function button(i){
     ptag.style.fontFamily="monospace";
     ptag.style.fontSize="1.5rem";
     document.getElementById("sgpa").appendChild(ptag);
+}
+function hoverin(i){
+    document.getElementById("id"+i).style.backgroundColor="darkgray";
+}
+function hoverout(i){
+    document.getElementById("id"+i).style.backgroundColor="skyblue";
 }
 function offcanvas(r){
     var div=document.createElement("div");
