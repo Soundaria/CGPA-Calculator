@@ -73,7 +73,7 @@ function button(i){
     ptag.setAttribute("id","ptag"+i);
     ptag.setAttribute("value","sgpa("+i+")");
     ptag.style.color="black";
-    ptag.style.fontFamily="monospace";
+    ptag.style.fontFamily="'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'";
     ptag.style.fontSize="1.5rem";
     document.getElementById("sgpa").appendChild(ptag);
 }
@@ -192,7 +192,7 @@ function add(s,j){
             select.style.width="5rem";
             document.getElementById("tdbody"+s+j).appendChild(select);
             var option =document.createElement("option");
-            option.setAttribute("selected","");
+            option.setAttribute("selected","Grade");
             document.getElementById("grade"+s+j).appendChild(option);
             var option =document.createElement("option");
             option.setAttribute("value","10");
@@ -233,7 +233,7 @@ function add(s,j){
             selectcr.setAttribute("id","credit"+s+j);
             document.getElementById("tdbodycr"+s+j).appendChild(selectcr);
             var optioncr=document.createElement("option");
-            optioncr.setAttribute("selected","");
+            optioncr.setAttribute("selected","Credit");
             document.getElementById("credit"+s+j).appendChild(optioncr);
             var optioncr =document.createElement("option");
             optioncr.setAttribute("value","1");
@@ -278,7 +278,7 @@ function sgpa(r,j){
         credits[r]=totalcr;
         marks[r]=marksum;
         var sem=marksum/totalcr;
-        document.getElementById("ptag"+r).innerHTML="<br />SEMESTER "+r+ " SGPA : "+sem.toFixed(2);
+        document.getElementById("ptag"+r).innerHTML="Semester "+r+ " SGPA : "+sem.toFixed(2);
         cgpa();
 }
 
@@ -292,7 +292,7 @@ function cgpa(){
         tcredits=credits[i]+tcredits;
     }               
     var cgpa=(final/tcredits).toFixed(2);
-    document.getElementById("cgpa").innerHTML="CGPA : <br />"+cgpa+"/10";
+    document.getElementById("cgpa").innerHTML=cgpa+"/10";
 }
 function result(){
     Fname=localStorage['name'];
